@@ -6,12 +6,22 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:21:26 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 03:21:27 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:23:11 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Applies the function ’f’ to each character of the string ’s’ , and
+ * passing its index as first argument to create a new string (with malloc)
+ * resulting from successive applications of ’f’. Returns The string created
+ * from the successive applications of ’f’. Returns NULL if the allocation fails.
+ * 
+ * @param s 
+ * @param f 
+ * @return char* 
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*res;

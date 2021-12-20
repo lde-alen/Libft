@@ -6,25 +6,15 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 10:00:08 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 23:06:25 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:15 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-	DESCRIPTION:
-		The ft_isascii function tests for an ASCII character, which is any character
-		between 0 and decimal 127 inclusive.
-	
-	RETURN VALUES:
-		The ft_isascii functions return zero if the character tests
-		false and return one if the character tests true.
-*/
-
 /**
- * @brief 
- * 
+ * @brief ft_isascii checks if the integer received belongs in the (ASCII)
+ * table. If true it will return 1; if false return 0.
  * @param c 
  * @return int 
  */

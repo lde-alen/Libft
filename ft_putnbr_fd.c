@@ -6,12 +6,18 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:20:47 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 03:20:48 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:06 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Checks for the int limits as we are dealing only with integers.
+ * 
+ * @param n 
+ * @param fd 
+ */
 static void	ft_limits(int n, int fd)
 {
 	if (n == -2147483648)
@@ -20,6 +26,12 @@ static void	ft_limits(int n, int fd)
 		ft_putchar_fd('0', fd);
 }
 
+/**
+ * @brief Outputs the integer ’n’ to the given file descriptor.
+ * 
+ * @param n 
+ * @param fd 
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	int		i;

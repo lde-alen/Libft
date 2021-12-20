@@ -6,12 +6,20 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:21:16 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 03:21:17 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:27:58 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Combines all strings in the argument list and puts the result into
+ * the returned string with dynamically allocated memory.
+ * 
+ * @param s1 
+ * @param s2 
+ * @return char* 
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t		i;

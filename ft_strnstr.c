@@ -6,12 +6,22 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 02:20:17 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 02:27:11 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:39:37 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Locates the first occurrence of the null-terminated string needle
+ * in the string haystack, where not more than len characters are searched.
+ * Characters that appear after a `\0' character are not searched.
+ * 
+ * @param haystack 
+ * @param needle 
+ * @param len 
+ * @return char* 
+ */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;

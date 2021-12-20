@@ -6,12 +6,18 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:20:20 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 03:20:21 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:10 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Counts the number of elements in a list.
+ * 
+ * @param lst 
+ * @return int 
+ */
 int	ft_lstsize(t_list *lst)
 {
 	size_t	len;

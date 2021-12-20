@@ -6,14 +6,15 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 11:10:42 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 13:13:42 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:08 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief Writes len bytes of value c (converted to an unsigned char) to the
+ * string b and returns it.
  * 
  * @param b 
  * @param c 

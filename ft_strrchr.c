@@ -6,14 +6,15 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 23:08:16 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 23:42:06 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:38:49 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief Returns a pointer to the last occurrence of the character c in 
+ * the string s.
  * 
  * @param s 
  * @param c 

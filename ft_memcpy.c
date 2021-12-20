@@ -6,14 +6,15 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 11:40:39 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 13:20:56 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:09 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief Copies n bytes from memory area src to memory area dst.  If dst and
+ * src overlap, behavior is undefined.
  * 
  * @param dst 
  * @param src 

@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:20:59 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 03:21:01 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:03 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 static size_t	check_size(const char *s, char c)
 {
-	size_t	cnt;
+	size_t	count;
 
-	cnt = 0;
+	count = 0;
 	while (*s && s++)
 	{
 		while (*s != c && *s)
 			s++;
-		cnt++;
+		count++;
 		while (*s == c && *s)
 			s++;
 	}
-	return (cnt);
+	return (count);
 }
 
 static int	fill_tab(char const *s, char c, char **tab)
@@ -55,6 +55,16 @@ static int	fill_tab(char const *s, char c, char **tab)
 	return (0);
 }
 
+/**
+ * @brief Allocates (with malloc) and returns an array of strings obtained by
+ * splitting ’s’ using the character ’c’ as a delimiter. The array must be ended
+ * by a NULL pointer. Returns the array of new strings resulting from the split.
+ * NULL if the allocation fails
+ * 
+ * @param s 
+ * @param c 
+ * @return char** 
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;

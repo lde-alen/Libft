@@ -6,14 +6,16 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 11:48:07 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 19:51:35 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:08 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief Copies len bytes from string src to string dst.  The two strings may
+ * overlap; the copy is always done in a non-destructive manner. Returns the
+ * original value of dst and NULL if the conditions are invalid.
  * 
  * @param dst 
  * @param src 

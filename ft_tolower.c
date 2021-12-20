@@ -6,14 +6,15 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 21:17:57 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 23:41:48 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:31:12 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief Converts a upper-case letter to the corresponding lower-case letter.
+ * The argument must be representable as an unsigned char.
  * 
  * @param c 
  * @return int 

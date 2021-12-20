@@ -6,7 +6,7 @@
 #    By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/19 09:20:19 by lde-alen          #+#    #+#              #
-#    Updated: 2021/12/20 04:26:40 by lde-alen         ###   ########.fr        #
+#    Updated: 2021/12/20 18:35:39 by lde-alen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,8 @@ LIB		=	ar rcs
 
 OBJS	=	$(SRCS:.c=.o)
 
+OBJS_B	=	$(SRCS_B:.c=.o)
+
 CFLAGS	+= -Wall -Werror -Wextra
 
 $(NAME)	:	$(OBJS)
@@ -70,10 +72,11 @@ $(NAME)	:	$(OBJS)
 
 all		:	$(NAME)
 
-.bonus	:
+bonus	:	$(OBJS_B)
+			$(LIB) $(NAME) $(OBJS_B)
 
 clean	:
-			rm -rf $(OBJS)
+			rm -rf $(OBJS) $(OBJS_B)
 
 fclean	:	clean
 			rm -rf $(NAME)

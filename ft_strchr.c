@@ -6,12 +6,20 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 22:02:18 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 23:13:24 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:24:41 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Returns a pointer to the first occurrence of the character c in 
+ * the string s.
+ * 
+ * @param s 
+ * @param c 
+ * @return char* 
+ */
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned char	asc;

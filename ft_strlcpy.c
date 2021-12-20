@@ -6,15 +6,16 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 11:54:11 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 21:09:53 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 20:07:16 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
- * 
+ * @brief Copy and concatenate strings with the same input parameters and 
+ * output the result. It takes the full size of the destination buffer and 
+ * guarantee NUL-termination if there is room.
  * @param dst 
  * @param src 
  * @param dstsize 

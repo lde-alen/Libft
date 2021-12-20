@@ -6,12 +6,21 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:21:39 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 03:21:40 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 18:28:02 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Allocates (with malloc(3)) and returns a copy of ’s1’ with the
+ * characters specified in ’set’ removed from the beginning and the end of
+ * the string. Return NULL if the allocation fails.
+ * 
+ * @param s1 
+ * @param set 
+ * @return char* 
+ */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*res;

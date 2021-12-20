@@ -6,12 +6,17 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 02:28:19 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 03:23:07 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 14:01:20 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief ft_atoi converts a string (ASCII values) into an int.
+ * @param str 
+ * @return int 
+ */
 int	ft_atoi(const char *str)
 {
 	int				i;

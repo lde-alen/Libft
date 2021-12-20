@@ -6,14 +6,18 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 12:00:02 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/19 21:16:10 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 20:09:03 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief Appends string src to the end of dst. It will append at most
+ * dstsize - strlen(dst) - 1 characters.  It will then NUL-terminate, unless
+ * dstsize is 0 or the original dst string was longer than dstsize (in practice
+ * this should not happen as it means that either dstsize is incorrect or that
+ * dst is not a proper string).
  * 
  * @param dst 
  * @param src 
