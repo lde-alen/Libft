@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 10:10:02 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:28:14 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/21 01:30:55 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_isprint(int c)
 {
 	unsigned char	asc;
 
-	asc = c;
+	asc = (unsigned char)c;
 	if (asc >= ' ' && asc <= '~')
 		return (1);
 	else
