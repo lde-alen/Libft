@@ -6,7 +6,7 @@
 #    By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/19 09:20:19 by lde-alen          #+#    #+#              #
-#    Updated: 2021/12/20 18:35:39 by lde-alen         ###   ########.fr        #
+#    Updated: 2021/12/21 00:44:17 by lde-alen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,6 +81,6 @@ clean	:
 fclean	:	clean
 			rm -rf $(NAME)
 
-re		:
+re		:	fclean all
 
 .PHONY	: all bonus clean fclean re

@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 10:00:08 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:28:15 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 22:05:28 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_isascii(int c)
 	unsigned char	asc;
 
 	asc = c;
-	if (asc >= 0 && asc <= 127)
+	if (asc <= 127)
 		return (1);
 	else
 		return (0);

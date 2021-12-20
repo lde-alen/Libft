@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:20:59 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:28:03 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/20 22:05:33 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,14 @@ static size_t	check_size(const char *s, char c)
 	return (count);
 }
 
+/**
+ * @brief fills tab
+ * 
+ * @param s 
+ * @param c 
+ * @param tab 
+ * @return int 
+ */
 static int	fill_tab(char const *s, char c, char **tab)
 {
 	size_t	i;
