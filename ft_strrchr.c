@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 23:08:16 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:38:49 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/21 13:40:25 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	asc = (unsigned char)c;
 	str = (char *) s;
-	len = strlen(str);
+	len = ft_strlen(str);
 	if (str[len] == c)
 		return ((char *)s + len);
 	while (len--)
