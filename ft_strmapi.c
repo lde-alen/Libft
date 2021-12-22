@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:21:26 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:23:11 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:42:20 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  * 
  * @param s 
  * @param f 
- * @return char* 
+ * @return char* (FREE REQ)
  */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -30,7 +30,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	if (!f || !s)
 		return (NULL);
-	res = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	res = (char *)ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!res)
 		return (NULL);
 	while (s[i])

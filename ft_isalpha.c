@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 09:20:11 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 14:01:55 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:22:07 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_isalpha(int c)
 {
 	unsigned char	asc;
 
-	asc = c;
+	asc = (unsigned char)c;
 	if ((asc >= 'A' && asc <= 'Z') || (asc >= 'a' && asc <= 'z'))
 		return (1);
 	else

@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:20:54 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:28:05 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:33:10 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  */
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (s == NULL)
+	if (!s)
 		return ;
 	write(fd, s, ft_strlen(s));
 }

@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 21:18:00 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 20:09:44 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:47:40 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_toupper(int c)
 {
 	unsigned int	asc;
 
-	asc = c;
+	asc = (unsigned int)c;
 	if (asc >= 'a' && asc <= 'z')
 		asc -= 32;
 	return (asc);

@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 02:34:22 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:25:51 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:38:33 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * freed with free.
  * 
  * @param s1 
- * @return char* 
+ * @return char* (FREE REQ)
  */
 char	*ft_strdup(const char *s1)
 {
@@ -29,13 +29,13 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	len = ft_strlen((char *)s1);
-	tmp = malloc((sizeof(char) * (len + 1)));
+	tmp = (char *)malloc((sizeof(char) * (len + 1)));
 	str = (char *)s1;
-	if (tmp == NULL)
+	if (!tmp)
 		return (NULL);
-	while (str[len] != '\0')
+	while (str[len])
 		len++;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		tmp[i] = str[i];
 		i++;

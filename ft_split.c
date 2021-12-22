@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:20:59 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 22:05:33 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:34:19 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static int	fill_tab(char const *s, char c, char **tab)
 		len = 0;
 		while (*s != c && *s && ++s)
 			len++;
-		tab[i] = malloc(len + 1);
+		tab[i] = (char *)malloc(len + 1);
 		if (!tab[i])
 		{
 			while (i)
@@ -71,7 +71,7 @@ static int	fill_tab(char const *s, char c, char **tab)
  * 
  * @param s 
  * @param c 
- * @return char** 
+ * @return char** (FREE REQ)
  */
 char	**ft_split(char const *s, char c)
 {

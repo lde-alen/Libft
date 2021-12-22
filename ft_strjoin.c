@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:21:16 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:27:58 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:37:38 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * 
  * @param s1 
  * @param s2 
- * @return char* 
+ * @return char* (FREE REQ)
  */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -32,7 +32,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		len_s1 = ft_strlen((char *)s1);
 		len_s2 = ft_strlen((char *)s2);
 		str = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
-		if (str == NULL)
+		if (!str)
 			return (NULL);
 		i = -1;
 		while (s1[++i])

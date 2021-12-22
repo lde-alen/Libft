@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 22:02:18 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:24:41 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:35:35 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,7 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	str = (char *) s;
 	while (str[i] && str[i] != asc)
-	{
-		if (str[i] == asc)
-			return ((char *)s + i);
 		i++;
-	}
 	if (str[i] == asc)
 		return ((char *)s + i);
 	return (NULL);

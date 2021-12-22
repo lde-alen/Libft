@@ -6,18 +6,18 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:18:54 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:21:29 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:28:13 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief ft_itoa constructs a string representation of an integer. The string
- * representing the integer. NULL if the allocation fails.
+ * @brief ft_itoa constructs a string representation of an integer. The
+ * malloc'ed string representing the integer. NULL if the allocation fails.
  * 
  * @param n 
- * @return char* 
+ * @return char* (FREE REQ)
  */
 char	*ft_itoa(int n)
 {

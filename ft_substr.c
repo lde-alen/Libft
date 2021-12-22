@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:21:49 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/21 00:46:29 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:46:20 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  * @param s 
  * @param start 
  * @param len 
- * @return char* 
+ * @return char* (FREE REQ)
  */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -36,7 +36,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		str_len++;
 	else
 		str_len = len + 1;
-	sub = ft_calloc(str_len, sizeof(char));
+	sub = (char *)ft_calloc(str_len, sizeof(char));
 	if (sub)
 		ft_strlcpy(sub, &s[start], str_len);
 	return (sub);

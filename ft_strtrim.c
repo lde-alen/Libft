@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 03:21:39 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:28:02 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:45:40 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  * 
  * @param s1 
  * @param set 
- * @return char* 
+ * @return char* (FREE REQ)
  */
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = ft_strlen((char *)s1);
 	while (len > 0 && ft_strchr(set, s1[len - 1]))
 		len--;
-	res = malloc(len + 1);
+	res = (char *)malloc(len + 1);
 	if (!res)
 		return (NULL);
 	ft_strlcpy(res, s1, len + 1);

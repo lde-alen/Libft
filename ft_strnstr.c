@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 02:20:17 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:39:37 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:44:15 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	j;	
 
-	i = 0;
-	j = 0;
 	if (!*needle)
 		return ((char *)haystack);
+	i = 0;
 	while (haystack[i] && i < len)
 	{
 		if (haystack[i] == needle[0])
 		{
+			j = 0;
 			while (needle[j] && needle[j] == haystack[i + j]
 				&& (i + j) < len)
 				j++;

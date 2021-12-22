@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 21:17:57 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:31:12 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:46:50 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_tolower(int c)
 {
 	unsigned int	asc;
 
-	asc = c;
+	asc = (unsigned int)c;
 	if (asc >= 'A' && asc <= 'Z')
 		asc += 32;
 	return (asc);
