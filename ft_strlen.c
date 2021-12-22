@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 10:31:03 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/22 14:41:23 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/22 15:02:09 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ size_t	ft_strlen(const char *s)
 	i = 0;
 	while (s[i++])
 		;
-	return (i);
+	return (--i);
 }
