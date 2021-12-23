@@ -6,7 +6,7 @@
 /*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 11:40:39 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/22 17:21:29 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/23 12:53:45 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,21 @@
  */
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char		*tmp_dst;
-	unsigned const char	*tmp_src;
+	size_t			i;
+	const char		*tmp_src;
+	char			*tmp_dest;
 
-	tmp_dst = (unsigned char *)dst;
-	tmp_src = (unsigned const char *)src;
-	if (!dst || !src)
+	tmp_src = src;
+	tmp_dest = dst;
+	i = 1;
+	if (!(tmp_dest || tmp_src))
 		return (NULL);
-	while (n > 0)
+	while (i <= n)
 	{
-		*tmp_dst++ = *tmp_src++;
-		n--;
+		*tmp_dest = *tmp_src;
+		tmp_dest++;
+		tmp_src++;
+		i++;
 	}
 	return (dst);
 }
