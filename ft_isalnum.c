@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: lde-alen <lde-alen@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 09:48:19 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:32:18 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/23 13:29:08 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_isalnum(int c)
 {
 	unsigned char	asc;
 
-	asc = c;
+	asc = (unsigned char)c;
 	if ((ft_isalpha(asc) == 1) || (ft_isdigit(asc) == 1))
 		return (1);
 	else

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+        */
+/*   By: lde-alen <lde-alen@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 09:34:27 by lde-alen          #+#    #+#             */
-/*   Updated: 2021/12/20 18:28:15 by lde-alen         ###   ########.fr       */
+/*   Updated: 2021/12/23 13:29:10 by lde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_isdigit(int c)
 {
 	unsigned char	asc;
 
-	asc = (unsigned int)c;
+	asc = (unsigned char)c;
 	if (asc >= '0' && asc <= '9')
 		return (1);
 	else

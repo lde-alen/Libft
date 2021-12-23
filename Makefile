@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lde-alen < lde-alen@student.42abudhabi.    +#+  +:+       +#+         #
+#    By: lde-alen <lde-alen@student.42abudhabi.a    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/19 09:20:19 by lde-alen          #+#    #+#              #
-#    Updated: 2021/12/21 00:44:17 by lde-alen         ###   ########.fr        #
+#    Updated: 2021/12/23 13:30:01 by lde-alen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
